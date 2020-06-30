@@ -1,0 +1,60 @@
+@import './variables-bootstrap';
+@import 'bootstrap/scss/bootstrap.scss';
+//reset
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 8px !important;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  html {
+    font-size: 8px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+body {
+  font-family: '微软雅黑', Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 768px;
+}
+
+//修改全宽度时container-fuild左右两边15px的空白
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+//title下面固定长度的border
+.blue-border {
+  border: 2px solid #1190ff;
+  width: 4.2857rem;
+  text-align: center;
+  margin: 0 auto;
+}
